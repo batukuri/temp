@@ -18,7 +18,7 @@ def GetSymbolList():
     data = json.load(fr)
     with open("symbol_data_prev.json", "w") as fw:
         json.dump(data, fw, indent=4);
-
+# refactor this file to be usable by others 
 # copy the old data to previous date file   
 def SetupData():
     # get the latest data 
